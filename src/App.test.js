@@ -17,6 +17,6 @@ test("App fetches SpaceX data on click and displays the mission names", async ()
 
     // Assert
     await waitFor(() => {
-        expect(screen.getAllByTestId("mission")).toHaveLength(6);
+        expect(screen.getAllByTestId("mission")).toHaveLength(10);
     })
 })
