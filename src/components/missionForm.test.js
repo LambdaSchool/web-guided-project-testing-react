@@ -29,5 +29,6 @@ test("While fetching data, MissionForm component renders a loading message", () 
 });
 
 test("MissionForm button calls getData when clicked", () => {
-    const mockGetData = jest.fn(() => return "Hi josh");
+    const mockGetData = jest.fn(() => { return ("Hi josh") });
+    
 })
