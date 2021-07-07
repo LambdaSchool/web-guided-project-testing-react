@@ -4,7 +4,8 @@ import MissionsList from "./MissionsList";
 
 test("MissionsList component renders nothing when missions array is empty", () => {
     // Arrange
-    render(<MissionsList missions={[]] />);
+    render(<MissionsList missions={[]} />);
+    
 
     // Act
 
