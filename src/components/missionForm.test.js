@@ -5,13 +5,12 @@ import MissionForm from "./MissionForm";
 test("MissionForm component renders with a Get Data button", () => {
     // Arrange
     render(<MissionForm />);
-    screen.getByRole('button', { name: /get data/i }); // implicit assertion, we're done!
-
-
+    const button = screen.getByRole('button', { name: /get data/i }); // implicit assertion, we're done!
 
     // (Act)
 
-    // Assert that the button is in the DOM
+    // (Assert that the button is in the DOM)
+    expect(button).toBeInTheDocument();
 });
 
 test("While fetching data, MissionForm component renders a loading message", () => {
