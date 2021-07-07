@@ -26,5 +26,4 @@ test("While fetching data, MissionForm component renders a loading message", () 
     expect(loadingMessage).toBeInTheDocument();
     expect(button).not.toBeInTheDocument();
     expect(button).toBeNull();
-
 })
