@@ -8,7 +8,12 @@ test("App renders without errors", () => {
 });
 
 test("App fetches SpaceX data on click and displays the mission names", () => {
+    // Arrange
     render(<App />);
+    const button = screen.getByRole('button', { name: /get data/i });
 
-    
+    // Act
+    fireEvent.click(button);
+
+    // Assert
 })
