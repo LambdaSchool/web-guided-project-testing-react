@@ -18,8 +18,8 @@ test("While fetching data, MissionForm component renders a loading message", () 
     // render the component, look for a loading message
     render(<MissionForm isFetchingData={true} />);
 
-
     // (Act)
 
-    // Assert that the loading message is in the DOM
+    // Assert that the loading message is in the DOM, and the get data button is NOT in the DOM
+
 })
