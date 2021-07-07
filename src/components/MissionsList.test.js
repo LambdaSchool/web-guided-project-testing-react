@@ -93,7 +93,7 @@ test("MissionsList component shows mission titles when rerendered with data from
     rerender(<MissionsList missions={data} />)
     const missions = screen.getAllByTestId("mission");
     const mission1 = screen.getByText(/telstar/i);
-    const mission2 = screen.getByText(/iri8dium next/i);
+    const mission2 = screen.getByText(/iridium next/i);
     const mission3 = screen.getByText(/asiasat/i);
     const mission4 = screen.getByText(/eutelsat/i);
 
