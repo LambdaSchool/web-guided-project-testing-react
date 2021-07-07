@@ -33,5 +33,11 @@ test("MissionForm button calls getData when clicked", () => {
     // Arrange: set up a mock function and pass it to the component as a prop
     const mockGetData = jest.fn(() => { return ("Hi josh") }); // this is a mock function
     render(<MissionForm getData={mockGetData} />);
+    const button = getByRole('button', { name: /get data/i });
+
+    // Act
+
+    // Assert
+
 
 })
