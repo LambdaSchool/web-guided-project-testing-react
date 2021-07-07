@@ -10,6 +10,7 @@ test("MissionsList component renders nothing when missions array is empty", () =
     // Act
 
     // Assert
+    expect(missions).toBeNull();
 });
 
 test("MissionsList component shows mission titles when rerendered with data from the API", () => {
