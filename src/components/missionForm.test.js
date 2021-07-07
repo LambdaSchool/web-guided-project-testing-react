@@ -18,7 +18,7 @@ test("While fetching data, MissionForm component renders a loading message", () 
     // render the component, look for a loading message
     render(<MissionForm isFetchingData={true} />);
     const loadingMessage = screen.getByText(/we are fetching data/i);
-    const button = screen.getByRole('button', { name: /get data/i }); // implicit assertion, we're done!
+    const button = screen.queryByRole('button', { name: /get data/i }); // implicit assertion, we're done!
 
     // (Act)
 
