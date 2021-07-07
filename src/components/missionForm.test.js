@@ -17,11 +17,14 @@ test("While fetching data, MissionForm component renders a loading message", () 
     // Arrange
     // render the component, look for a loading message
     render(<MissionForm isFetchingData={true} />);
-    const loadingMessage = screen.getByText(/we are fetching data/i);
-    const button = screen.queryByRole('button', { name: /get data/i }); // implicit assertion, we're done!
+    const loadingMessage = screen.getByText(/we are fetching data/i); // implicit assertion
+    const button = screen.queryByRole('button', { name: /get data/i });
 
     // (Act)
 
     // Assert that the loading message is in the DOM, and the get data button is NOT in the DOM
+    expect(loadingMessage).toBeInTheDocument();
+    expect(button).not.toBeInTheDocument();
+    expect(button).toBeNull();
 
 })
