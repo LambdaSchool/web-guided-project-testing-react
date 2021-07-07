@@ -23,7 +23,7 @@ test("While fetching data, MissionForm component renders a loading message", () 
     // (Act)
 
     // Assert that the loading message is in the DOM, and the get data button is NOT in the DOM
-    expect(loadingMessage).toBeInTheDocument();
-    expect(button).not.toBeInTheDocument();
+    expect(loadingMessage).toBeInTheDocument(); // not strictly necessary (implicit assertion in getBy)
+    expect(button).not.toBeInTheDocument(); // assertion is necesssary in this case
     expect(button).toBeNull();
 })
