@@ -41,4 +41,5 @@ test("MissionForm button calls getData when clicked", () => {
     // Assert: the getData function should have been called once (this is the "spying" piece)
     expect(mockGetData).toHaveBeenCalled();
     expect(mockGetData).toHaveBeenCalledTimes(1);
+    expect(mockGetData.mock.calls).toHaveLength(1); // another syntax variation, same functionality as above
 })
