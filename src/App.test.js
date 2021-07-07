@@ -7,7 +7,7 @@ test("App renders without errors", () => {
     render(<App />)
 });
 
-test("App fetches SpaceX data on click and displays the mission names", () => {
+test("App fetches SpaceX data on click and displays the mission names", async () => {
     // Arrange
     render(<App />);
     const button = screen.getByRole('button', { name: /get data/i });
@@ -16,4 +16,6 @@ test("App fetches SpaceX data on click and displays the mission names", () => {
     fireEvent.click(button);
 
     // Assert
+    expect(screen.findAllByTestId("mission")).toHaveLength(6);
+    
 })
