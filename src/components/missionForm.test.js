@@ -1,5 +1,5 @@
 import React from "react";
-import { screen, render } from "@testing-library/react";
+import { screen, render, fireEvent } from "@testing-library/react";
 import MissionForm from "./MissionForm";
 
 test("MissionForm component renders with a Get Data button", () => {
@@ -33,9 +33,10 @@ test("MissionForm button calls getData when clicked", () => {
     // Arrange: set up a mock function and pass it to the component as a prop
     const mockGetData = jest.fn(() => { return ("Hi josh") }); // this is a mock function
     render(<MissionForm getData={mockGetData} />);
-    const button = getByRole('button', { name: /get data/i });
+    const button = screen.getByRole('button', { name: /get data/i });
 
-    // Act
+    // Act: click the button!
+    fireEvent.click(button);
 
     // Assert
 
