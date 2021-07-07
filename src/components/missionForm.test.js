@@ -10,7 +10,7 @@ test("MissionForm component renders with a Get Data button", () => {
     // (Act)
 
     // (Assert that the button is in the DOM)
-    expect(button).toBeInTheDocument();
+    expect(button).toBeInTheDocument(); // not strictly necesary because getByRole already asserts that there is one and only one "get data" button in the DOM
 });
 
 test("While fetching data, MissionForm component renders a loading message", () => {
