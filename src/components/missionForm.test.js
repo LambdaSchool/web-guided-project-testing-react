@@ -6,16 +6,14 @@ test("MissionForm component renders with a Get Data button", () => {
 
     // (Act)
 
-    // (Assert)
+    // Assert that the button is in the DOM
 });
 
 test("While fetching data, MissionForm component renders a loading message", () => {
     // Arrange
-    // render the component, look for a button element with the text /get data/i
-
-
+    // render the component, look for a loading message
 
     // (Act)
 
-    // (Assert)
+    // Assert that the loading message is in the DOM
 })
