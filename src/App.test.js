@@ -7,6 +7,8 @@ test("App renders without errors", () => {
     render(<App />)
 });
 
-test("App fetches SpaceX data and displays the mission names", () => {
+test("App fetches SpaceX data on click and displays the mission names", () => {
+    render(<App />);
+
     
 })
