@@ -30,6 +30,7 @@ test("While fetching data, MissionForm component renders a loading message", () 
 
 // "Spy" on the getData function to test the event listener
 test("MissionForm button calls getData when clicked", () => {
+    // Arrange: set up a mock function and pass it to the component as a prop
     const mockGetData = jest.fn(() => { return ("Hi josh") }); // this is a mock function
     render(<MissionForm getData={mockGetData} />);
 
