@@ -99,5 +99,5 @@ test("MissionsList component shows mission titles when rerendered with data from
 
     // Assert
     expect(missions).toHaveLength(4);
-
+    // We've already asserted (implicitly) that the four missions have their titles displayed. If you wanted to be even more robust, you could add some additional assertions around those DOM elements, but it's not necessary.
 });
