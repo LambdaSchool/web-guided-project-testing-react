@@ -1,8 +1,10 @@
 import React from "react";
 import { render } from "@testing-library/react";
+import MissionForm from "./MissionForm";
 
 test("MissionForm component renders with a Get Data button", () => {
     // Arrange
+    render(<MissionForm />);
 
     // render the component, look for a button element with the text /get data/i
 
