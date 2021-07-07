@@ -1,6 +1,6 @@
 // Top-level integration test for our app
 import React from "react";
-import { screen, render, fireEvent } from "@testing-library/react";
+import { screen, render, fireEvent, wait } from "@testing-library/react";
 import App from "./App";
 
 test("App renders without errors", () => {
@@ -16,6 +16,7 @@ test("App fetches SpaceX data on click and displays the mission names", async ()
     fireEvent.click(button);
 
     // Assert
+    await wait();
     expect(screen.findAllByTestId("mission")).toHaveLength(6);
     
 })
