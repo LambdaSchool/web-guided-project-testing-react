@@ -26,4 +26,8 @@ test("While fetching data, MissionForm component renders a loading message", () 
     expect(loadingMessage).toBeInTheDocument(); // not strictly necessary (implicit assertion in getBy)
     expect(button).not.toBeInTheDocument(); // assertion is necesssary in this case
     expect(button).toBeNull();
+});
+
+test("MissionForm button calls getData when clicked", () => {
+    const mockGetData = jest.fn(() => return "Hi josh");
 })
