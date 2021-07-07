@@ -15,8 +15,9 @@ test("MissionsList component renders nothing when missions array is empty", () =
 
 test("MissionsList component shows mission titles when rerendered with data from the API", () => {
     // Arrange
+    const { rerender } = render(<MissionsList missions={[]} />);
 
-    // Act
+    // Act (simulate a successful api call)
 
     // Assert
 });
