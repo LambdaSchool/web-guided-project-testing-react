@@ -6,3 +6,7 @@ import App from "./App";
 test("App renders without errors", () => {
     render(<App />)
 });
+
+test("App fetches SpaceX data and displays the mission names", () => {
+    
+})
