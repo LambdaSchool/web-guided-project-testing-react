@@ -13,7 +13,9 @@ test("App renders without errors", () => {
 test("App fetches SpaceX data on click and displays the mission names", async () => {
     // Arrange
     render(<App />);
-    mockFetchMissions.mock
+    mockFetchMissions.mockResolvedValueOnce({
+
+    });
 
     const button = screen.getByRole('button', { name: /get data/i });
 
