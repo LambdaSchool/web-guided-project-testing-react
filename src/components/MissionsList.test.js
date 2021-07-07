@@ -2,6 +2,11 @@ import React from "react";
 import { screen, render } from "@testing-library/react";
 import MissionsList from "./MissionsList";
 
+// mock data
+const data = [
+
+]
+
 test("MissionsList component renders nothing when missions array is empty", () => {
     // Arrange
     render(<MissionsList missions={[]} />);
@@ -18,6 +23,7 @@ test("MissionsList component shows mission titles when rerendered with data from
     const { rerender } = render(<MissionsList missions={[]} />);
 
     // Act (simulate a successful api call)
+    rerender(<MissionsList missions={data} />)
 
     // Assert
 });
