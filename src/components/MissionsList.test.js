@@ -94,6 +94,6 @@ test("MissionsList component shows mission titles when rerendered with data from
     const missions = screen.getAllByTestId("mission");
 
     // Assert
-    expect(missions).toHaveLength(3);
+    expect(missions).toHaveLength(4);
 
 });
